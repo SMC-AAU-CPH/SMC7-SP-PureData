@@ -1,0 +1,59 @@
+#N canvas 387 211 1072 627 10;
+#X declare -path .;
+#X declare -path day1;
+#X declare -path day2;
+#X declare -lib flatgui/knob;
+#X obj 28 555 cnv 15 1024 25 empty empty AAU_CPH_Credits: 20 12 1 14
+-33173 -262144 0;
+#X obj 957 599 declare -path .;
+#X obj 116 48 declare -path day1;
+#X obj 117 255 declare -path day2;
+#X text 27 583 SOPI Research Group \, Aalto University \, Finland;
+#X obj 29 260 cnv 15 200 40 empty empty S2:_PD_Advanced 20 12 1 14
+-33173 -262144 0;
+#X obj 314 16 cnv 15 200 40 empty empty Exercise_2.2_Delay_FX 20 12
+1 14 -33173 -262144 0;
+#X obj 30 430 2.5_sample1;
+#X obj 30 457 2.6_sample2;
+#X obj 30 487 2.7_fiddle_bonk;
+#X obj 30 514 2.8_fiddle2;
+#X obj 30 317 2.1_controlobjects;
+#X obj 30 346 2.2_sendreceive;
+#X obj 30 376 2.3_subpatches_and_abstractions;
+#X obj 30 403 2.4_delay;
+#X obj 29 120 1.2_creating_sound;
+#X obj 27 596 pddplink http://obiwannabe.co.uk/html/toys/machineomatic/machine-o-matic.html
+;
+#X text 26 609 fourMS \, University of Oslo \, Norway;
+#X text 26 622 filterview (SMC07): Hans-Christoph Steiner <hans@eds.org>
+;
+#X text 27 634 SNAC (SMC10):;
+#X text 27 646 SMC12: Dan Ellis;
+#X obj 128 647 pddplink http://www.ee.columbia.edu/~dpwe/e4896/;
+#X obj 29 93 1.1_objects;
+#X text 817 583 R-Click on empty canvas for object list;
+#X text 28 67 BIG PICTURE: PD Desktop -> Mobile;
+#N canvas 1056 1041 476 347 unused 0;
+#X obj 9 174 1.3_additive;
+#X obj 9 201 1.4.1_am_synth;
+#X obj 9 228 1.4.2_fm_synth;
+#X obj 9 255 1.5_subtractive;
+#X restore 152 37 pd unused S1;
+#X obj 28 14 cnv 15 200 40 empty empty Session_1:_PD_Basics 20 12 1
+14 -33173 -262144 0;
+#X obj 29 148 SMC4-1-Aliasing;
+#X obj 681 15 cnv 15 200 40 empty empty Exercise_2.1_Granular 20 12
+1 14 -33173 -262144 0;
+#X obj 114 635 pddplink http://www.katjaas.nl;
+#X obj 679 157 pddplink http://www.pd-tutorial.com/english/ch03s07.html
+;
+#X text 314 75 1 Implement a delay effect in Matlab;
+#X text 313 96 2 An echo is given by the following equation: y[n] =
+x[n] + bN x[n − N ] Implement an echo effect. Explore how the sound
+changes while varying bN and N.;
+#X text 312 144 3 A chorus algorithm uses a variable delay line y[n]
+= x[n] + x[n − g[n]] Implement g[n] as a low frequency oscillator.
+;
+#X text 679 65 Implement a granular synthesizer including granSize
+\, ...;
+#X text 680 143 Hint:;
