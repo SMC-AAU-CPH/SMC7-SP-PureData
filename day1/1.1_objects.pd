@@ -1,4 +1,4 @@
-#N canvas 5 22 1230 779 10;
+#N canvas 0 22 1024 720 12;
 #X obj 38 62 print;
 #X floatatom 43 136 5 0 0 2 this_is_a_number_box - -;
 #X msg 38 8 10;
@@ -18,7 +18,7 @@
 #X obj 48 626 print;
 #X text 70 602 toggle object;
 #X obj 43 186 nbx 5 14 -1e+37 1e+37 0 1 empty empty this-is-a-number2-box
-0 -6 0 10 -261597 -1 -1 20 256;
+0 -6 0 10 -261597 -1 -1 27 256;
 #X obj 492 26 hsl 100 50 0 10000 0 0 empty empty mlab_slider -2 -6
 0 8 -262144 -1 -1 0 1;
 #X floatatom 489 148 8 0 0 0 - - -;
@@ -58,7 +58,7 @@ of bangs at a constant rate.;
 ;
 #X obj 826 394 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 48 604 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 48 604 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 34 -21 cnv 15 200 20 empty empty empty 20 12 0 14 -191407 -262144
 0;
@@ -122,6 +122,8 @@ canvas. Things go very easily behind it \; like this........;
 #X text 418 172 Range and appearance can be changed \; from the properties.
 ;
 #X text 82 61 object box;
+#X obj 121 625 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 2 0 0 0;
 #X connect 8 0 7 0;
 #X connect 9 0 8 0;
@@ -143,6 +145,7 @@ canvas. Things go very easily behind it \; like this........;
 #X connect 44 0 43 0;
 #X connect 44 0 42 0;
 #X connect 49 0 14 0;
+#X connect 49 0 94 0;
 #X connect 60 0 59 0;
 #X connect 64 0 62 0;
 #X connect 68 0 69 0;

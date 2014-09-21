@@ -1,4 +1,4 @@
-#N canvas 102 22 620 475 10;
+#N canvas 546 77 648 505 10;
 #X obj 44 14 cnv 15 500 30 empty empty Subpatches_and_Abstractions
 20 12 0 14 -33173 -262144 0;
 #N canvas 667 226 785 335 subpatch 0;
