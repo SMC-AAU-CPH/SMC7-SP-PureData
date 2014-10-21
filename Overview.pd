@@ -1,4 +1,4 @@
-#N canvas 298 63 1072 627 10;
+#N canvas 667 259 1072 627 10;
 #X declare -path .;
 #X declare -path day1;
 #X declare -path day2;
@@ -42,10 +42,10 @@
 #X obj 28 14 cnv 15 200 40 empty empty Session_1:_PD_Basics 20 12 1
 14 -33173 -262144 0;
 #X obj 29 148 SMC4-1-Aliasing;
-#X obj 681 15 cnv 15 200 40 empty empty Exercise_2.1_Granular 20 12
-1 14 -33173 -262144 0;
+#X obj 310 366 cnv 15 200 40 empty empty New_Material_Silo 20 12 1
+14 -33173 -262144 0;
 #X obj 114 635 pddplink http://www.katjaas.nl;
-#X obj 679 157 pddplink http://www.pd-tutorial.com/english/ch03s07.html
+#X obj 309 338 pddplink http://www.pd-tutorial.com/english/ch03s07.html
 ;
 #X text 313 96 2 An echo is given by the following equation: y[n] =
 x[n] + bN x[n − N ] Implement an echo effect. Explore how the sound
@@ -53,9 +53,7 @@ changes while varying bN and N.;
 #X text 312 144 3 A chorus algorithm uses a variable delay line y[n]
 = x[n] + x[n − g[n]] Implement g[n] as a low frequency oscillator.
 ;
-#X text 679 65 Implement a granular synthesizer including granSize
-\, ...;
-#X text 680 143 Hint:;
+#X text 310 324 Hint:;
 #X text 314 75 1 Implement a delay effect on PD.;
 #N canvas 855 342 450 300 E2.2.2_Echo 0;
 #X obj 23 144 +~;
@@ -82,7 +80,7 @@ changes while varying bN and N.;
 #X connect 10 0 4 0;
 #X connect 11 0 0 0;
 #X connect 11 0 9 0;
-#X restore 313 214 pd E2.2.2_Echo;
+#X restore 314 202 pd E2.2.2_Echo;
 #N canvas 855 342 450 300 E2.2.3_Chorus 0;
 #X obj 36 102 delwrite~ \$0Delay 4000;
 #X obj 23 144 +~;
@@ -109,7 +107,7 @@ changes while varying bN and N.;
 #X connect 11 0 8 0;
 #X connect 12 0 0 0;
 #X connect 12 0 1 0;
-#X restore 313 244 pd E2.2.3_Chorus;
+#X restore 312 229 pd E2.2.3_Chorus;
 #N canvas 854 350 450 300 E2.2.1_Delay 0;
 #X floatatom 195 40 5 0 0 0 - - -;
 #X obj 34 112 delwrite~ \$01Delay 4000;
@@ -119,5 +117,12 @@ changes while varying bN and N.;
 #X connect 0 0 2 0;
 #X connect 2 0 4 0;
 #X connect 3 0 1 0;
-#X restore 314 185 pd E2.2.1_Delay;
+#X restore 314 179 pd E2.2.1_Delay;
 #X text 420 213 Connect I/0 Audio;
+#X obj 310 260 cnv 15 200 40 empty empty Exercise_2.1_Granular 20 12
+1 14 -33173 -262144 0;
+#X text 308 310 Implement a granular synthesizer including granSize
+\, ...;
+#X obj 312 428 earplug~;
+#X text 376 435 Rightclick help for usage.;
+#X text 376 422 HRTF implementation.;
